@@ -158,6 +158,37 @@
                 </a>
                 <p class="text-center text-sm text-gray-700 image-caption">ECUADOR TERCERA 2024</p>
             </div>
+
+            <div class="image-container" data-caption="JUVENTUS LOCAL 2023">
+                <a href="JUVENTUS LOCAL 2023.html" target="_blank">
+                    <img src="juve_local_2023.png" alt="JUVENTUS LOCAL 2023" class="rounded-md border-2 border-white/50 shadow-md button-image w-full h-auto max-w-[200px] max-h-[175px] object-contain">
+                </a>
+                <p class="text-center text-sm text-gray-700 image-caption">JUVENTUS LOCAL 2023</p>
+            </div>
+            <div class="image-container" data-caption="LIVERPOOL LOCAL 2024">
+                <a href="LIVERPOOL LOCAL 2024.html" target="_blank">
+                    <img src="liverpool_local_2024.png" alt="LIVERPOOL LOCAL 2024" class="rounded-md border-2 border-white/50 shadow-md button-image w-full h-auto max-w-[200px] max-h-[175px] object-contain">
+                </a>
+                <p class="text-center text-sm text-gray-700 image-caption">LIVERPOOL LOCAL 2024</p>
+            </div>
+            <div class="image-container" data-caption="PSG LOCAL 2022">
+                <a href="PSG LOCAL 2022.html" target="_blank">
+                    <img src="psg_local_2022.png" alt="PSG LOCAL 2022" class="rounded-md border-2 border-white/50 shadow-md button-image w-full h-auto max-w-[200px] max-h-[175px] object-contain">
+                </a>
+                <p class="text-center text-sm text-gray-700 image-caption">PSG LOCAL 2022</p>
+            </div>
+            <div class="image-container" data-caption="BOCA JUNIORS SUPLENTE 2023">
+                <a href="BOCA JUNIORS SUPLENTE 2023.html" target="_blank">
+                    <img src="boca_suplente_2023.png" alt="BOCA JUNIORS SUPLENTE 2023" class="rounded-md border-2 border-white/50 shadow-md button-image w-full h-auto max-w-[200px] max-h-[175px] object-contain">
+                </a>
+                <p class="text-center text-sm text-gray-700 image-caption">BOCA JUNIORS SUPLENTE 2023</p>
+            </div>
+            <div class="image-container" data-caption="RIVER PLATE TITULAR 2024">
+                <a href="RIVER PLATE TITULAR 2024.html" target="_blank">
+                    <img src="river_titular_2024.png" alt="RIVER PLATE TITULAR 2024" class="rounded-md border-2 border-white/50 shadow-md button-image w-full h-auto max-w-[200px] max-h-[175px] object-contain">
+                </a>
+                <p class="text-center text-sm text-gray-700 image-caption">RIVER PLATE TITULAR 2024</p>
+            </div>
         </div>
     </main>
 
@@ -195,21 +226,10 @@
                 }
             });
 
-            // Handle no matches found - You can add a message to the user if you want
-            if (!matchesFound) {
-                // console.log("No matches found"); // For debugging
-                // You can create a message element and display it
-            }
-        });
-
-        document.addEventListener('click', (event) => {
-            if (!searchContainer.contains(event.target) && !searchInput.contains(event.target)) {
-                searchInput.classList.remove('active');
-                searchInput.value = '';
-                imageContainers.forEach(container => {
-                    container.style.display = '';
-                });
-            }
+            // You can add a message for when no matches are found if you want.
+            // if (!matchesFound) {
+            //   imageGrid.innerHTML = '<p>No se han encontrado resultados.</p>';
+            // }
         });
     </script>
 </body>
