@@ -98,6 +98,36 @@
 
     <main class="flex flex-col items-center gap-8 w-full" id="main-content">
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 w-full max-w-7xl px-4" id="image-grid">
+            <div class="image-container" data-caption="2PAC JERSEY BLACK">
+                <a href="2PAC JERSEY BLACK.html" target="_blank">
+                    <img src="X2TfQ5w.png" alt="2PAC JERSEY BLACK" class="rounded-md border-2 border-white/50 shadow-md button-image w-full h-auto max-w-[200px] max-h-[175px] object-contain">
+                </a>
+                <p class="text-center text-sm text-gray-700 image-caption">2PAC JERSEY BLACK</p>
+            </div>
+            <div class="image-container" data-caption="ARSENAL LOCAL 2023">
+                <a href="ARSENAL LOCAL 2023.html" target="_blank">
+                    <img src="arsenal_local_2023.png" alt="ARSENAL LOCAL 2023" class="rounded-md border-2 border-white/50 shadow-md button-image w-full h-auto max-w-[200px] max-h-[175px] object-contain">
+                </a>
+                <p class="text-center text-sm text-gray-700 image-caption">ARSENAL LOCAL 2023</p>
+            </div>
+            <div class="image-container" data-caption="LIVERPOOL VISITANTE 2023">
+                <a href="LIVERPOOL VISITANTE 2023.html" target="_blank">
+                    <img src="liverpool_visitante_2023.png" alt="LIVERPOOL VISITANTE 2023" class="rounded-md border-2 border-white/50 shadow-md button-image w-full h-auto max-w-[200px] max-h-[175px] object-contain">
+                </a>
+                <p class="text-center text-sm text-gray-700 image-caption">LIVERPOOL VISITANTE 2023</p>
+            </div>
+            <div class="image-container" data-caption="PSG LOCAL 2024">
+                <a href="PSG LOCAL 2024.html" target="_blank">
+                    <img src="psg_local_2024.png" alt="PSG LOCAL 2024" class="rounded-md border-2 border-white/50 shadow-md button-image w-full h-auto max-w-[200px] max-h-[175px] object-contain">
+                </a>
+                <p class="text-center text-sm text-gray-700 image-caption">PSG LOCAL 2024</p>
+            </div>
+            <div class="image-container" data-caption="BAYERN MUNICH LOCAL 2024">
+                <a href="BAYERN MUNICH LOCAL 2024.html" target="_blank">
+                    <img src="bayern_local_2024.png" alt="BAYERN MUNICH LOCAL 2024" class="rounded-md border-2 border-white/50 shadow-md button-image w-full h-auto max-w-[200px] max-h-[175px] object-contain">
+                </a>
+                <p class="text-center text-sm text-gray-700 image-caption">BAYERN MUNICH LOCAL 2024</p>
+            </div>
             <div class="image-container" data-caption="FANTASY PANTERA">
                 <a href="FANTASY PANTERA.html" target="_blank">
                     <img src="EAGLhvn.png" alt="FANTASY PANTERA" class="rounded-md border-2 border-white/50 shadow-md button-image w-full h-auto max-w-[200px] max-h-[175px] object-contain">
@@ -248,17 +278,17 @@
                 const altText = imageElement.alt.toLowerCase().replace(/\s+/g, ''); // Remove spaces
 
                 if (caption.includes(searchTerm) || altText.includes(searchTerm)) {
-                    container.style.display = '';
+                    container.style.display = ''; // Show the container
                     matchesFound = true;
                 } else {
-                    container.style.display = 'none';
+                    container.style.display = 'none'; // Hide the container
                 }
             });
 
-            // You can add a message for when no matches are found if you want.
-            // if (!matchesFound) {
-            //  imageGrid.innerHTML = '<p>No se han encontrado resultados.</p>';
-            // }
+            // You can add a message to the user if no matches are found
+            if (!matchesFound) {
+                //  console.log("No matches found");
+            }
         });
     </script>
 </body>
